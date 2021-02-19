@@ -1,5 +1,7 @@
 # Rick and Morty search
 
+**[Live Demo](https://tusharpandey13.github.io/rick-morty-search/)**
+
 * Uses autocomplete
 * antd for UI
 * useReducer for state management
