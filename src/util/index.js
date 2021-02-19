@@ -6,7 +6,7 @@ const getData = ({ searchText, page = 1, url = undefined }) => {
       url: url ?? `https://rickandmortyapi.com/api/character/?name=${searchText}&page=${page}`,
     })
       .then(function (response) {
-        console.log(response.data);
+        // console.log(response.data);
         resolve(response.data);
       })
       .catch(e => {
