@@ -1,5 +1,7 @@
 # Rick and Morty search
 
+**[Live Demo](https://tusharpandey13.github.io/rick-morty-search/)**
+
 * Uses autocomplete
 * antd for UI
 * useReducer for state management
@@ -9,3 +11,6 @@
 * Clean component based structure
 * Axios for REST requests
 * Attempted an exact copy of problem UI screenshot
+
+![UI Screenshot](https://github.com/tusharpandey13/rick-morty-search/blob/master/docs/2.png?raw=true)
+![UI Screenshot](https://github.com/tusharpandey13/rick-morty-search/blob/master/docs/1.png?raw=true)
