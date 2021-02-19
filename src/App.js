@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React, { useReducer } from 'react';
+import { initialState, reducer } from './store';
+import SearchBar from './components/searchbar';
+import ResultsList from './components/resultslist';
+import ScrollIntersectionHandler from './components/scrollIntersectionHandler';
+
 import './App.css';
 
 function App() {
+  const [store, dispatch] = useReducer(reducer, initialState);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <p>Rick and Morty Search</p>
+      <SearchBar store={store} dispatch={dispatch}></SearchBar>
+      <ResultsList store={store} dispatch={dispatch}></ResultsList>
+      <ScrollIntersectionHandler store={store} dispatch={dispatch}></ScrollIntersectionHandler>
     </div>
   );
 }
